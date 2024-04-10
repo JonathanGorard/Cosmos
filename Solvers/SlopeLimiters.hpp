@@ -5,7 +5,7 @@
 #include "../RelativisticEuler/RelativisticEulerStateVector.hpp"
 #include "../BlackHoleEuler/BlackHoleEulerStateVector.hpp"
 #include "../Mathematics/VectorAlgebra.hpp"
-#include "/usr/local/include/omp.h"
+#include <omp.h>
 
 class SlopeLimiters
 {

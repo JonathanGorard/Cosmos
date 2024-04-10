@@ -40,6 +40,7 @@ Install a C++ compiler and necessary libraries.
   - Install using Homebrew.
   ```bash
   brew install hdf5
+  brew install libomp
   ```
 
 ## Step 3: Validate Installation
@@ -140,3 +141,4 @@ chmod +x setup_and_run.sh
 ```
 
 This process places the script in the correct directory and ensures it has the necessary permissions to execute.
+
