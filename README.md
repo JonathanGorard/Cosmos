@@ -40,7 +40,6 @@ Install a C++ compiler and necessary libraries.
   - Install using Homebrew.
   ```bash
   brew install hdf5
-  brew install libomp
   ```
 
 ## Step 3: Validate Installation
@@ -142,3 +141,19 @@ chmod +x setup_and_run.sh
 
 This process places the script in the correct directory and ensures it has the necessary permissions to execute.
 
+----
+----
+----
+
+### we also did this to debug
+
+To set the [LDFLAGS](file:///Users/ops/code/Cosmos#207%2C10-207%2C10) and [CPPFLAGS](file:///Users/ops/code/Cosmos#208%2C10-208%2C10) environment variables for your current terminal session, you can run the following commands directly in your terminal:
+
+```bash
+export LDFLAGS="-L/opt/homebrew/opt/libomp/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/libomp/include"
+```
+
+After running these commands, you can proceed with your compilation command. These environment variables will instruct the compiler where to find the OpenMP library and include files.
+
+If you want these changes to be persistent across terminal sessions, you can add these export commands to your shell's configuration file (e.g., `~/.bash_profile`, `~/.bashrc`, `~/.zshrc`, etc.). Open the file in a text editor and append the above export commands to the end of the file.
